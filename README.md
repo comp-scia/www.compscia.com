@@ -25,7 +25,7 @@ Source of the https://www.compscia.com website.
     ```
  5. Run Gatsby and have fun!
     ```bash
-    > gatsby develop
+    > pnpm start
     ```
 
 ## Contributing
