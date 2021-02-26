@@ -2,7 +2,8 @@
     display: flex;
     flex-flow: row wrap;
     height: auto;
-    padding: 0 64px;
+    padding: 0 96px;
+    justify-content: space-around;
 }
 .sectionTitle {
     font-size: 40px;
