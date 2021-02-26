@@ -1,6 +1,5 @@
 import React from 'react';
 import {Person} from '../components/personCard';
-import {ContentCard} from '../components/contentCard';
 import PersonSection from '../components/personSection';
 
 export default () => {
@@ -80,9 +79,6 @@ export default () => {
                     <img src="assets/img/Vision.png" style={{width: '100px',marginTop: '-51px',paddingTop: '65px',paddingBottom: '20px'}}/>
                     <p style={{fontSize: '16px',color: 'rgb(8,15,51)',marginTop: '-8px',paddingBottom: '26px'}}><strong>CSA visions a future where our members become futurists and creates disruption in industries through digitalization or automation.</strong></p>
                 </div>
-                <ContentCard>
-                    <div></div>
-                </ContentCard>
             </section>
             <section>
                 <PersonSection people={boardMembers} title="Executive Board"/>
