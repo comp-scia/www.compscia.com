@@ -5,15 +5,13 @@ import PersonSection from '../components/personSection';
 export default () => {
     let boardMembers: Person[] = [
         {name:'Monica Lee',title:'President / Chief Executive Officer',imgUrl:'/images/board/monica.jpeg',links:{linkedin:'monica-l-15629479',instagram:'certifiedmonicalee',email:'moniblee@icloud.com'}},
-        {name:'Serigne Ousmane Ciss',title:'Vice President / Chief Operating Officer',imgUrl:'/images/board/ociss.jpg',links:{linkedin:'serigne-ousmane-kana',instagram:'certifiedmonicalee',email:'ousmanekanaciss@gmail.com'}},
         {name:'Lex von Biedenfeld',title:'Chief Technology Officer',imgUrl:'/images/board/avonbied.jpg',links:{linkedin:'avonbied',instagram:'avonbied'}},
-        {name:'Eric Hyche',title:'Secretary',imgUrl:'/images/board/ehyche.jpg',links:{linkedin:'ericihyche',instagram:'arithmxtic',email:'ericihyche@gmail.com'}},
-        {name:'Amber Yu',title:'Chief Finance Officer',imgUrl:'/images/board/amber.jpg',links:{linkedin:'amber-yu-b7025116b',instagram:'asvon5000',email:'ambereel9@gmail.com'}},
+        {name:'Eric Hyche',title:'Vice President',imgUrl:'/images/board/ehyche.jpg',links:{linkedin:'ericihyche',instagram:'arithmxtic',email:'ericihyche@gmail.com'}},
+        {name:'Denzel Wilson',title:'Chief Finance Officer',imgUrl:'/images/board/denzel.jpg',links:{linkedin:'denzel-wilson-2422481a2',instagram:'',email:''}},
+        {name:'Aaron Alford',title:'Secretary',imgUrl:'/images/board/aalford.png',links:{linkedin:'',instagram:'',email:''}},
         {name:'Stefania Lopez-Portillo',title:'Chief Representative',imgUrl:'/images/board/sportillo.jpeg'},
         {name:'Sirine Ennadi',title:'Chief Marketing Officer',imgUrl:'/images/board/sennadi.jpg'},
-        {name:'Al Tareen',title:'Chief Developmment Officer',imgUrl:'/images/board/altareen.png',links:{linkedin:'California',instagram:'altareen',email:'altareenk@outlook.com'}},
-        {name:'Ngolo Drissa Sanogo',title:'Chief Information Officer',imgUrl:'/images/board/dsanogo.jpg',links:{linkedin:'drissa-sanogo-a44286133',email:'drissas75@gmail.com'}},
-        {name:'Eduardo Moya',title:'Fellow',imgUrl:'/images/board/emoya.jpg',links:{linkedin:'e-moya',instagram:'ed_da_best',email:'edualomoya4@gmail.com'}}
+        {name:'Al Tareen',title:'Chief Strategy Officer',imgUrl:'/images/board/altareen.png',links:{linkedin:'California',instagram:'altareen',email:'altareenk@outlook.com'}}
     ];
     let advisors: Person[] = [
         {name:'Samir Saber',title:['Department Chair','Digital Information and Technology'],imgUrl:'/images/board/samir.jpg',links:{linkedin:'samirsaber',phone:'7137187513',email:'samir.saber@hccs.edu'}}
