@@ -1,9 +1,8 @@
 import React from 'react';
 import {Person, PersonCard} from './personCard';
-import styles from '../styles/components/personSection.module.scss';
+import * as styles from '../styles/components/personSection.module.scss';
 
-const PersonSection = (props: any) => {
-    const {people, title} = props;
+const PersonSection = ({people, title}: {people: Person[], title: string | Node}) => {
     return (
         <>
         <h2 className={styles.sectionTitle}>{title}</h2>

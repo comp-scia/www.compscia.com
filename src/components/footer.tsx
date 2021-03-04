@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/components/footer.module.scss';
+import {siteFoot, socialIcons, icon, copyright} from '../styles/components/footer.module.scss';
 
 const socialLinks = [
     {
@@ -23,13 +23,13 @@ const socialLinks = [
 
 const Footer = () => {
     return (
-        <footer id={styles.siteFoot}>
-            <div className={styles.socialIcons}>
+        <footer id={siteFoot}>
+            <div className={socialIcons}>
                 { socialLinks.map((link,i) => (
-                    <a href={link.link} className={styles.icon} key={i}><i className={"fab fa-".concat(link.name)}></i></a>
+                    <a href={link.link} className={icon} key={i}><i className={"fab fa-".concat(link.name)}></i></a>
                 )) }
             </div>
-            <div className={styles.copyright}>
+            <div className={copyright}>
                 <small>&copy; 2019 &ndash; { (new Date()).getFullYear() } Computer Science Association
                     | Made with <i style={{color: 'red'}} className="fas fa-heart"></i> by
                     <a style={{textDecoration: 'none', color: '#fff'}} href="https://github.com/avonbied"> @avonbied</a></small>

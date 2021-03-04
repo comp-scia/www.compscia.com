@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/components/personCard.module.scss';
+import * as styles from '../styles/components/personCard.module.scss';
 
 export type Person = {
     name: string,
@@ -13,8 +13,7 @@ export type Person = {
     }
 }
 
-export const PersonCard = (props: Person) => {
-    const {name, title, imgUrl, links} = props;
+export const PersonCard = ({name, title, imgUrl, links}: Person) => {
     return (
         <div className={styles.personCard}>
             <img className={styles.avatar} src={imgUrl}/>

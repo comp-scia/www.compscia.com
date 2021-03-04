@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import styles from '../styles/components/header.module.scss';
+import * as styles from '../styles/components/header.module.scss';
 
 type Page = {
     link: string,
