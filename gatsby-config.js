@@ -6,26 +6,23 @@ module.exports = {
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
-		'gatsby-transformer-sharp',
-		'gatsby-plugin-sharp',
-		'gatsby-plugin-sass',
+		{
+			resolve: `gatsby-plugin-sass`,
+			options: {
+				// Override the file regex for Sass
+				// sassRuleTest: /\.global\.s(a|c)ss$/,
+				// // Override the file regex for CSS modules
+				// sassRuleModulesTest: /\.module\.s(a|c)ss$/,
+				cssLoaderOptions: {
+					camelCase: true,
+				},
+			},
+		},
 		{
 			resolve: 'gatsby-source-filesystem',
 			options: {
 				name: `images`,
 				path: `${__dirname}/static/images`,
-			},
-		},
-		{
-			resolve: 'gatsby-plugin-manifest',
-			options: {
-				name: `gatsby-starter-default`,
-				short_name: `starter`,
-				start_url: `/`,
-				background_color: `#663399`,
-				theme_color: `#663399`,
-				display: `minimal-ui`,
-				icon: `static/images/brand/logo-transparent.png`,
 			},
 		},
 		{
