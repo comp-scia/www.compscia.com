@@ -18,7 +18,7 @@ const Header = () => {
     ];
     return (
         <header id={styles.siteHead}> 
-            <Link to='/'><img className={styles.logo} src="/images/logo-transparent.png" /></Link>
+            <Link to='/'><img className={styles.logo} src="/images/brand/logo-transparent.png" /></Link>
             { seasonal
                 ? <button>VOTE NOW</button>
                 : false
