@@ -1,5 +1,6 @@
 import React from 'react';
 import {Person} from '../components/personCard';
+import {MissionCard} from '../components/missionCard';
 import PersonSection from '../components/personSection';
 
 export default () => {
@@ -14,7 +15,8 @@ export default () => {
         {name:'Al Tareen',title:'Chief Strategy Officer',imgUrl:'/images/board/altareen.png',links:{linkedin:'California',instagram:'altareen',email:'altareenk@outlook.com'}}
     ];
     let advisors: Person[] = [
-        {name:'Samir Saber',title:['Department Chair','Digital Information and Technology'],imgUrl:'/images/board/samir.jpg',links:{linkedin:'samirsaber',phone:'7137187513',email:'samir.saber@hccs.edu'}}
+        {name:'Samir Saber',title:['Department Chair','Digital Information and Technology'],imgUrl:'/images/board/samir.jpg',links:{linkedin:'samirsaber',phone:'7137187513',email:'samir.saber@hccs.edu'}},
+        {name:'Dalia Gumeel',title:['Programming Faculty',],imgUrl:'/images/board/dgumeel.jpg',links:{linkedin:'dalia-gumeel',email:'dalia.gumeel@hccs.edu'}},
     ];
     return (
         <>
@@ -49,34 +51,9 @@ export default () => {
                     flexFlow: 'row nowrap',
                     justifyContent: 'center'
                 }}>
-                <div>
-                    <header style={{verticalAlign: 'middle'}}>
-                        <h4 style={{
-                                display: 'inline-block',
-                                fontSize: '40px',
-                                color: 'rgb(19,13,79)',
-                                margin: 'auto'}}><strong>MISSION &nbsp;</strong></h4>
-                        <img src="assets/img/Mission.png" style={{
-                            display: 'inline-block',
-                            width: '70px'}} />
-                    </header>
-                    <p style={{
-                            color: 'rgb(8,15,51)',
-                            fontSize: '16px',
-                            marginTop: '15px'}}>
-                        <strong>CSA TRAINS, PREPARES, AND UNITES STUDENTS FOR THE EVER-CHANGING TECHNOLOGICAL FRONTIERS TO ENSURE THAT OUR MEMBERS ARE THE PIONEERS OF NEW TECHNOLOGIES.</strong><br/></p>
-                </div>
-                <div>
-                    <h4 style={{fontSize: '40px',color: 'rgb(19,13,79)'}}><strong>VALUES &nbsp;</strong></h4>
-                    <img src="assets/img/Values.png" style={{width: '90px',marginTop: '-14px'}} />
-                    <p style={{
-                        fontSize: '16px',color: 'rgb(8,15,51)',marginTop: '-1px',paddingBottom: '2px'}}><strong>INSPIRE</strong><br/><strong>OVERCOME</strong><br/><strong>INNOVATE</strong><br/><strong>DISRUPT</strong><br/><br/></p>
-                </div>
-                <div>
-                    <h4 style={{fontSize: '40px',color: 'rgb(19,13,79)'}}><strong>VISION &nbsp;</strong></h4>
-                    <img src="assets/img/Vision.png" style={{width: '100px',marginTop: '-51px',paddingTop: '65px',paddingBottom: '20px'}}/>
-                    <p style={{fontSize: '16px',color: 'rgb(8,15,51)',marginTop: '-8px',paddingBottom: '26px'}}><strong>CSA visions a future where our members become futurists and creates disruption in industries through digitalization or automation.</strong></p>
-                </div>
+                <MissionCard icon='Mission.png' headline='MISSION'>CSA trains, prepares, and unites students for the ever-changing technological frontiers to ensure that our members are the pioneers of new technologies.</MissionCard>
+                <MissionCard icon='Values.png' headline='VALUES'>INSPIRE OVERCOME INNOVATE DISRUPT</MissionCard>
+                <MissionCard icon='Vision.png' headline='VISION'>CSA visions a future where our members become futurists and creates disruption in industries through digitalization or automation.</MissionCard>
             </section>
             <section>
                 <PersonSection people={boardMembers} title="Executive Board"/>
